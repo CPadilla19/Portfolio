@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/font-awesome/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/883ac4b02e.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- lightBox -->
+    <link rel="stylesheet" href="../assets/lightbox/lightbox2-dev/dist/css/lightbox.min.css">
+</head>
+
+<body>
+    <!-- Encabezado-->
+    <header>
+        <div class="contenedor-header">
+            <nav>
+                <a class="enlaces-nav" href="galeria.html"> <img class="espejo-nav" src="../assets/img/espejo-nav.png"
+                        alt="Icono-navegación1" /> </a>
+                <a class="enlaces-nav" href="presupuesto.html"> <img class="presupuesto-nav"
+                        src="../assets/img/presupuesto-nav.png" alt="Icono-navegación2" /> </a>
+                <a class="enlaces-nav" href="contacto.html"> <img class="contacto-nav"
+                        src="../assets/img/contacto-nav.png" alt="Icono-navegación3" /> </a>
+            </nav>
+            <a class="enlace-al-index" href="../index.html">
+                <h1 class="titulo">Peluquería <br> <span>MarmotStyle</span></h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="h2-secciones">Galería</h2>
+            <div class="contenedor-estilos">
+                <!--Estilos mujeres-->
+                <a class="example-image-link" href="../assets/img/galeria/balayage.jpg" data-lightbox="example-set"
+                    data-title="Balayage"> <img src="../assets/img/galeria/balayage.jpg" alt="Imagen-balayage"> </a>
+                <a class="example-image-link" href="../assets/img/galeria/detox.jpg" data-lightbox="example-set"
+                    data-title="Detox"> <img src="../assets/img/galeria/detox.jpg" alt="Imagen-detox"> </a>
+                <a class="example-image-link" href="../assets/img/galeria/extensiones.jpg" data-lightbox="example-set"
+                    data-title="Extensiones"> <img src="../assets/img/galeria/extensiones.jpg" alt="Imagen-extensiones">
+                </a>
+                <a class="example-image-link" href="../assets/img/galeria/fantasia.jpg" data-lightbox="example-set"
+                    data-title="Color fantasía"> <img src="../assets/img/galeria/fantasia.jpg"
+                        alt="Imagen-tinte-color-fantasía"> </a>
+            </div>
+
+            <div class="contenedor-estilos">
+                <a class="example-image-link" href="../assets/img/galeria/hidratacion.jpg" data-lightbox="example-set"
+                    data-title="Tratamiento de hidratación"> <img src="../assets/img/galeria/hidratacion.jpg"
+                        alt="Imagen-tratamiento-de-hidratación"> </a>
+                <a class="example-image-link" href="../assets/img/galeria/keratina.jpg" data-lightbox="example-set"
+                    data-title="Keratina"> <img src="../assets/img/galeria/keratina.jpg" alt="Imagen-keratina"> </a>
+                <a class="example-image-link" href="../assets/img/galeria/lavado.jpg" data-lightbox="example-set"
+                    data-title="Lavado"> <img src="../assets/img/galeria/lavado.jpg" alt="Imagen-lavado"> </a>
+                <a class="example-image-link" href="../assets/img/galeria/mechas.jpg" data-lightbox="example-set"
+                    data-title="Mechas"> <img src="../assets/img/galeria/mechas.jpg" alt="Imagen-mechas"> </a>
+            </div>
+
+            <div class="contenedor-estilos">
+                <a class="example-image-link" href="../assets/img/galeria/peinando.jpg" data-lightbox="example-set"
+                    data-title="Peinado"> <img src="../assets/img/galeria/peinando.jpg" alt="Imagen-peinando"> </a>
+                <a class="example-image-link" href="../assets/img/galeria/permanente.jpg" data-lightbox="example-set"
+                    data-title="Permanente"> <img src="../assets/img/galeria/permanente.jpg" alt="Imagen-permanente">
+                </a>
+                <a class="example-image-link" href="../assets/img/galeria/tinte.jpg" data-lightbox="example-set"
+                    data-title="Tinte de color"> <img src="../assets/img/galeria/tinte.jpg" alt="Imagen-tinte"> </a>
+                <a class="example-image-link" href="../assets/img/galeria/trenzas.jpg" data-lightbox="example-set"
+                    data-title="Trenzas"> <img src="../assets/img/galeria/trenzas.jpg" alt="Imagen-trenzas"> </a>
+            </div>
+        </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <div class="contenedor-footer">
+
+            <form>
+                <p>
+                    ¡Súscribete si quieres estar atento/a con todas las novedades de
+                    nuestro salón de belleza!
+                </p>
+                <input id="inputNombre" type="text" placeholder="Nombre" required />
+                <input id="inputEmail" type="email" placeholder="Email" required />
+                <button>Enviar</button>
+            </form>
+            <div class="copyright">
+                <p>Copyright © 2022</p>
+                <a class="facebook" href="https://www.facebook.com/llaminaduresmarypinedademar" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="instagram" href="https://www.instagram.com/llaminaduresmary/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <p>Cristian Padilla</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="../assets/lightbox/lightbox2-dev/dist/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- lightBox opciones -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 550,
+            'wrapAround': true,
+            'alwaysShowNavOnTouchDevices': true
+        })
+    </script>
+</body>
+
+</html>

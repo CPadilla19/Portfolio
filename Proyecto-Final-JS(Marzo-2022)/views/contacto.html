@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Polyfill(googleMaps) -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- Google maps API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB201_-kjsw1yxmDdwafDIxuLjTGx-ukq8&callback=initMap"
+        async> </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/font-awesome/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/883ac4b02e.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Encabezado-->
+    <header>
+        <div class="contenedor-header">
+            <nav>
+                <a class="enlaces-nav" href="../views/galeria.html"> <img class="espejo-nav"
+                        src="../assets/img/espejo-nav.png" alt="Icono-navegación1" /> </a>
+                <a class="enlaces-nav" href="../views/presupuesto.html"> <img class="presupuesto-nav"
+                        src="../assets/img/presupuesto-nav.png" alt="Icono-navegación2" /> </a>
+                <a class="enlaces-nav" href="../views/contacto.html"> <img class="contacto-nav"
+                        src="../assets/img/contacto-nav.png" alt="Icono-navegación3" /> </a>
+            </nav>
+            <a class="enlace-al-index" href="../index.html">
+                <h1 class="titulo">Peluquería <br> <span>MarmotStyle</span></h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="contenedor-form">
+                <h2 class="h2-secciones">Contacto</h2>
+                <!--Inicio del mapa-->
+                <div class="contenedor-mapa">
+                    <div class="partida-destino">
+                        <input type="text" value="" placeholder="Introduce las coordenadas del punto de partida:"
+                            id="partida">
+                        <input type="text" value="" placeholder="Introduce las coordenadas de tu destino:" id="destino">
+                    </div>
+
+                    <textarea id="copiarCordenadas">41.624808377504166, 2.686492769475444</textarea>
+                    <div class="btn-copiar">
+                        <button id="btnCopiar">Copiar al portapapeles las coordenadas de MarmotStyle</button>
+                        <p class="tickVerde">✅</p>
+                    </div>
+                    <div class="calculoRuta">
+                        <input id="btnGeoLoc" type="button" value="Calcular ruta">
+                    </div>
+                    <!--Aquí se carga el mapa-->
+                    <div id="map"></div>
+                    <div id="streetMap"></div>
+                    <div id="ruta" style="position:relative;float:left;width:250px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <div class="contenedor-footer">
+
+            <form>
+                <p>
+                    ¡Súscribete si quieres estar atento/a con todas las novedades de
+                    nuestro salón de belleza!
+                </p>
+                <input id="inputNombre" type="text" placeholder="Nombre" required />
+                <input id="inputEmail" type="email" placeholder="Email" required />
+                <button>Enviar</button>
+            </form>
+            <div class="copyright">
+                <p>Copyright © 2022</p>
+                <a class="facebook" href="https://www.facebook.com/llaminaduresmarypinedademar" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="instagram" href="https://www.instagram.com/llaminaduresmary/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <p>Cristian Padilla</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/map.js"></script>
+</body>
+
+</html>

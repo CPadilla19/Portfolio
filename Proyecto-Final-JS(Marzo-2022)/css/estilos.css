@@ -1,0 +1,289 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Arial;
+}
+
+
+/* Header */
+
+header {
+  height: 600px;
+  background-image: url("../assets/img/33281.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor-header {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  overflow: hidden;
+}
+
+nav {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+nav img {
+  width: 100px;
+}
+
+.titulo {
+  font-size: 60px;
+  font-weight: 300;
+  color: #000;
+}
+
+.titulo span {
+  font-style: italic;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.enlace-al-index,
+.enlaces-nav {
+  text-decoration: none;
+}
+
+
+/* Contenedores y estilos multisección */
+
+.contenedor-estilos{
+  width: 100%;
+  max-width: 1400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.fondo-texto{
+  background: #f1f1f1;
+}
+
+.h2-secciones{
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+/* Galerías index */
+
+.contenedor-estilos img{
+  width: 300px;
+  height: 380.5px;
+  margin: 8px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  transition: all .4s;
+}
+
+.contenedor-estilos img:hover{
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+
+/* Quiénes somos */
+
+
+.contenedor-descripcion{
+  width: 100%;
+  max-width: 1250px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.contenedor-descripcion p,
+.contenedor-descripcion h3{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#res{
+  width: 100%;
+  max-width: 1250px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#res h4{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+/* Presupuestos */
+
+
+.contenedor-form{
+  width: 100%;
+  max-width: 1400px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.formulario-presupuesto{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-top: 8px;
+}
+
+.datos,
+.presupuesto{
+  display: grid;
+}
+
+.presupuesto-actual,
+.condiciones,
+.enviar-form{
+  display: flex;
+  justify-content: center;
+}
+
+.presupuesto-actual,
+.condiciones,
+.enviar-form > div{
+  margin: 10px 0;
+}
+
+.enviar-form{
+  margin-bottom: 20px;
+}
+
+.condiciones label{
+  margin-right: 5px;
+}
+
+.enviar-form input{
+  padding: 0.6em;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.formulario-presupuesto
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+input[type="email"]{
+  width: 170px;
+  padding: 0.45em;
+  border: 2px solid rgb(179, 179, 179);
+  border-radius: 6px;
+}
+
+
+/* Contacto */
+
+.contenedor-mapa{
+  width: 100%;
+  max-width: 700px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 8px;
+}
+
+.partida-destino{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+#partida,
+#destino{
+  padding: 5px;
+}
+
+#copiarCordenadas{
+  visibility: hidden;
+  display: none;
+}
+
+.tickVerde{
+  display: flex;
+  align-items: center;
+}
+
+.btn-copiar,
+.calculoRuta{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-copiar button,
+.calculoRuta input{
+  padding: 8px;
+  border: 2px solid #3f729b;
+}
+
+#btnGeoLoc{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+#map,
+#streetMap{
+  position: relative;
+  height: 300px;
+}
+
+/* Footer */
+
+.contenedor-footer{
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+
+footer{
+  background: #232323;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.copyright{
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+footer form p{
+  font-size: 18px;
+}
+
+footer form input,
+footer form button{
+  padding: 5px;
+  font-size: 12px;
+}
+
+.copyright a{
+  width: 8%;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.facebook:hover{
+  background: #3b5998
+}
+
+.instagram:hover{
+  background: #3f729b;
+}

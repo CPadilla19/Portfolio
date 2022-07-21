@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarmotStyle</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/883ac4b02e.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- lightBox -->
+    <link rel="stylesheet" href="assets/lightbox/lightbox2-dev/dist/css/lightbox.min.css">
+
+</head>
+
+<body>
+    <!-- Encabezado-->
+    <header>
+        <div class="contenedor-header">
+            <nav>
+                <a class="enlaces-nav"  href="views/galeria.html"> <img class="espejo-nav"
+                        src="assets/img/espejo-nav.png" alt="Icono-navegación1" /> </a>
+                <a class="enlaces-nav" href="views/presupuesto.html"> <img class="presupuesto-nav"
+                        src="assets/img/presupuesto-nav.png" alt="Icono-navegación2" /> </a>
+                <a class="enlaces-nav" href="views/contacto.html"> <img class="contacto-nav"
+                        src="assets/img/contacto-nav.png" alt="Icono-navegación3" /> </a>
+            </nav>
+            <a class="enlace-al-index" href="index.html">
+                <h1 class="titulo">Peluquería <br> <span>MarmotStyle</span></h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="h2-secciones">Estilos de corte de pelo</h2>
+            <!--Galería de estilos de corte de pelo-->
+            <div class="contenedor-estilos">
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/hombre-coleta.jpg"
+                    data-lightbox="example-set" data-title="Coleta"> <img
+                        src="assets/img/estilos-corte-pelo-index/hombre-coleta.jpg" alt="Imagen-hombre-coleta"> </a>
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/hombre-degradado-corto.jpg"
+                    data-lightbox="example-set" data-title="Degradado corto"> <img
+                        src="assets/img/estilos-corte-pelo-index/hombre-degradado-corto.jpg"
+                        alt="Imagen-hombre-degradado-corto"> </a>
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/hombre-degradado-largo.jpg"
+                    data-lightbox="example-set" data-title="Degradado largo"> <img
+                        src="assets/img/estilos-corte-pelo-index/hombre-degradado-largo.jpg"
+                        alt="Imagen-hombre-degradado-largo"> </a>
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/hombre-tupe.jpg"
+                    data-lightbox="example-set" data-title="Tupé"> <img
+                        src="assets/img/estilos-corte-pelo-index/hombre-tupe.jpg" alt="Imagen-hombre-tupe"> </a>
+            </div>
+
+            <div class="contenedor-estilos">
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/mujer-alisado.jpg"
+                    data-lightbox="example-set" data-title="Alisado"> <img
+                        src="assets/img/estilos-corte-pelo-index/mujer-alisado.jpg" alt="Imagen-mujer-alisado"> </a>
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/mujer-corto-flequillo.jpg"
+                    data-lightbox="example-set" data-title="Flequillo corto"> <img
+                        src="assets/img/estilos-corte-pelo-index/mujer-corto-flequillo.jpg"
+                        alt="Imagen-mujer-flequillo-corto"> </a>
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/mujer-media-melena.jpg"
+                    data-lightbox="example-set" data-title="Media melena"> <img
+                        src="assets/img/estilos-corte-pelo-index/mujer-media-melena.jpg"
+                        alt="Imagen-mujer-media-melena"> </a>
+                <a class="example-image-link" href="assets/img/estilos-corte-pelo-index/mujer-rizado-ondulado.jpg"
+                    data-lightbox="example-set" data-title="Rizado ondulado"> <img
+                        src="assets/img/estilos-corte-pelo-index/mujer-rizado-ondulado.jpg"
+                        alt="Imagen-mujer-rizado-ondulado"> </a>
+            </div>
+
+        </section>
+
+        <section class="fondo-texto">
+            <h2 id="cargar-noticia" class="h2-secciones">Noticias</h2>
+            <div class="contenedor-descripcion">
+                <!-- Noticia JSON -->
+                <div id="res"></div>
+            </div>
+        </section>
+
+        <section>
+
+            <h2 class="h2-secciones">Nuestros productos</h2>
+            <!--Galería de productos-->
+            <div class="contenedor-estilos">
+                <a class="example-image-link" href="assets/img/productos-index/espuma.jpg" data-lightbox="example-set"
+                    data-title="Espuma"> <img src="assets/img/productos-index/espuma.jpg" alt="producto-espuma"> </a>
+                <a class="example-image-link" href="assets/img/productos-index/gomina.jpg" data-lightbox="example-set"
+                    data-title="Gomina"> <img src="assets/img/productos-index/gomina.jpg" alt="producto-gomina"> </a>
+                <a class="example-image-link" href="assets/img/productos-index/keratina.jpg" data-lightbox="example-set"
+                    data-title="Keratina"> <img src="assets/img/productos-index/keratina.jpg" alt="producto-keratina">
+                </a>
+                <a class="example-image-link" href="assets/img/productos-index/laca.jpg" data-lightbox="example-set"
+                    data-title="Laca"> <img src="assets/img/productos-index/laca.jpg" alt="producto-laca"> </a>
+            </div>
+
+            <div class="contenedor-estilos">
+                <a class="example-image-link" href="assets/img/productos-index/maquina-cortapelo.jpg"
+                    data-lightbox="example-set" data-title="Cortapelo"> <img
+                        src="assets/img/productos-index/maquina-cortapelo.jpg" alt="producto-cortapelo"> </a>
+                <a class="example-image-link" href="assets/img/productos-index/plancha.jpg" data-lightbox="example-set"
+                    data-title="Plancha"> <img src="assets/img/productos-index/plancha.jpg" alt="producto-plancha"> </a>
+                <a class="example-image-link" href="assets/img/productos-index/secador.jpg" data-lightbox="example-set"
+                    data-title="Secador"> <img src="assets/img/productos-index/secador.jpg" alt="producto-secador"> </a>
+                <a class="example-image-link" href="assets/img/productos-index/tijeras.jpg" data-lightbox="example-set"
+                    data-title="Tijeras"> <img src="assets/img/productos-index/tijeras.jpg" alt="producto-tijeras"> </a>
+            </div>
+
+        </section>
+        <!--Quiénes somos-->
+        <section class="fondo-texto">
+            <h2 class="h2-secciones">Quiénes somos</h2>
+            <div class="contenedor-descripcion">
+                <p>MarmotStyle es una peluquería pionera ya que llevamos abiertos desde Febrero de 2022, pese a no tener
+                    apenas experiencia, tenemos muy claros nuestros objetivos y nuestra motivación vale más que 100 años
+                    de experiencia.</p>
+                <p>Este establecimiento nació por apasionados del sector de la peluquería, de personas jóvenes con ganas
+                    de aprender para así poder ofrecerte el mejor servicio capilar.</p>
+                <p>Si te urge una sesión de peluquería, puedes hacer click <a href="views/presupuesto.html">aquí</a>
+                    para echar un vistazo a todos los
+                    servicios que ofrecemos, ¡no te lo pienses!
+                </p>
+                <p> <a href="views/contacto.html">Aquí</a> tienes nuestra <a href="views/contacto.html">ubicación</a>,
+                    ¡te esperamos con mucho gusto!</p>
+                <p>-El equipo de MarmotStyle</p>
+            </div>
+        </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <div class="contenedor-footer">
+
+            <form>
+                <p>
+                    ¡Súscribete si quieres estar atento/a con todas las novedades de
+                    nuestro salón de belleza!
+                </p>
+                <input id="inputNombre" type="text" placeholder="Nombre" required />
+                <input id="inputEmail" type="email" placeholder="Email" required />
+                <button>Enviar</button>
+            </form>
+            <div class="copyright">
+                <p>Copyright © 2022</p>
+                <a class="facebook" href="https://www.facebook.com/llaminaduresmarypinedademar" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="instagram" href="https://www.instagram.com/llaminaduresmary/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <p>Cristian Padilla</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/lightbox/lightbox2-dev/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/noticiaJSON.js"></script>
+
+    <!-- lightBox opciones -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 550,
+            'wrapAround': true,
+            'alwaysShowNavOnTouchDevices': true
+        })
+    </script>
+</body>
+
+</html>
