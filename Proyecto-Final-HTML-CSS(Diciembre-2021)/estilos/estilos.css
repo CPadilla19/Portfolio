@@ -1,0 +1,363 @@
+/* Estilos generales */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", Arial;
+  font-size: 16px;
+}
+
+
+
+/* Header */
+
+.letrero-llaminadures {
+  background-position: center;
+  background-repeat: no-repeat;
+  background: #ff8b00;
+  background: -moz-linear-gradient(top, #ff8b00 0%, #f9a33d 100%);
+  background: -webkit-linear-gradient(top, #ff8b00 0%, #f9a33d 100%);
+  background: linear-gradient(to bottom, #ff8b00 0%, #f9a33d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8b00', endColorstr='#f9a33d',GradientType=0 );
+}
+
+.llaminadures{
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+  -webkit-text-stroke: 7px #fff;
+  paint-order: stroke;
+}
+
+.llaminadures a{
+  text-decoration: none;
+}
+
+.wordVerde{
+  color: #54ec6d;
+}
+
+.wordRed{
+  color: #e40606;
+}
+
+.wordPurple{
+  color: #9740f3;
+}
+
+.wordNaranja{
+  color: #fe8a00;
+}
+
+.wordAzul{
+  color: #1c88fb;
+}
+
+.menu{
+  background: #fbc258;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu a{
+  font-size: 18px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.menu a:hover{
+  text-decoration: underline;
+  color: #2f2dd1;
+}
+
+.contenido-menu{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconos img{
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+}
+
+.iconos a .enlaceicon{
+  width: 30px;
+  height: 30px;
+}
+
+#presupuesto2{
+  margin: 0 80px;
+}
+
+
+
+/* Index */
+
+.carusel{
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+#conteItemsCarrusel{
+  height: 75vh;
+  overflow: hidden;
+}
+
+.itemCarrusel{
+  height: 100%;
+  position: relative;
+}
+
+.tarjetaCarrusel{
+  height: 100%;
+}
+
+.flechasCarrusel{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.flechasCarrusel a{
+  text-decoration: none;
+}
+
+.flechasCarrusel i{
+  color: white;
+  border-radius: 100%;
+  border: 5px solid #ff8b00;
+  padding: 5px;
+  background-color: #ff8b00;
+}
+
+.itemCarrusel img{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.encargos .textomain{
+  color: #ff4d00;
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.galeria-index{
+  width: 100%;
+  max-width: 1600px;
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.galeria-index img{
+  width: 40%;
+  opacity: 0.9;
+  margin: 0px 10px;
+}
+
+.galeria-index img:hover{
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+
+.sobre-ll {
+  margin-bottom: 10px;
+}
+
+.texto-bienvenida > p{
+  margin-top: 20px;
+}
+
+.gracias{
+  padding-bottom: 10px;
+}
+
+.texto-introduccion{
+  width: 100%;
+  max-width: 1580px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Color de fondo en las galerias */
+.encargos,
+.colorFondo-galeria{
+  background:#FFF9FC;
+}
+
+
+
+/* Contenedor + titulo principal de cada sección (Galería , presupuestos y contacto */
+.contenedor-secciones{
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulos-secciones{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+
+/* Sección Galería */
+
+.galeria-seccion{
+  width: 100%;
+  max-width: 1600px;
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.galeria-seccion img{
+  width: 15%;
+  opacity: 0.9;
+}
+.galeria-seccion img:hover{
+  opacity: 1;
+  cursor:zoom-in;
+  border: 1px solid rgba(0, 0, 0, 0.801);
+  transition: all 0.3s ease;
+}
+
+
+
+/* Sección Presupuestos */
+
+.formulario{
+  display: flex;
+  justify-content: center;
+  margin: 4.5rem 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario input[type="submit"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #226fc1;
+  font-size: 16px;
+  display: block;
+}
+
+.formulario textarea{
+  min-height: 120px;
+  max-height: 120px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.politica{
+  margin-bottom: 20px;
+}
+
+
+
+/* Sección Contacto */
+
+.contenido-contacto{
+  margin: 4.5rem 0;
+}
+
+.horarios{
+  margin-top: 30px;
+}
+
+.textos-contacto{
+  float: right;
+  width: 33%;
+}
+
+iframe{
+  width:65%;
+  height:405px;
+  border: none;
+}
+
+
+/* Texto naranja h3 */
+.textomain{
+  color: #ff4d00;
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+
+
+
+/* Pie de página */
+
+footer{
+  background: #232323;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.contenedor-footer{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contenedor-footer a{
+  color: #fff;
+  text-align: center;
+  width: 125px;
+  display: block;
+  border-radius: 3px;
+  font-size: 30px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.contenedor-footer .facebook:hover{
+  background: #3b5998;
+}
+
+.contenedor-footer .instagram:hover{
+  background: #3f729b;
+} 
